@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pong Remake</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="name">
+            <h1>Pong - javascript</h1>
+        </div>
+        <main>
+                <canvas id="gameCanvas" ></canvas>
+        </main>
+
+        <aside class="container">
+                <h4>ToDo:</p>
+                <ol>
+                    <li>Angle control during serve with mouse.</li>
+                    <li>Power control during serve with mouse.</li>
+                    <li>Player name input</li>
+                    <li>Pause.</li>
+                </ol>
+        </aside>
+
+        <pre class="container">
+                <code id="code"></code>
+        </pre>
+
+        <script id="code" src="script.js"></script>
+
+        <script type="text/javascript">
+
+            var code = document.getElementById("code");
+
+            var xhttp  = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                code.innerHTML = this.responseText;
+            }
+            xhttp.open("GET", "script.js", true);
+            xhttp.send();
+
+
+        </script>
+
+
+    </body>
+</html>

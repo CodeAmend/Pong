@@ -1,0 +1,38 @@
+* {
+    padding: 0; margin: 0;
+}
+body {
+    background-color: #594f4f;
+    padding: 20px;
+}
+#name {
+    width:350px;
+    margin: auto;
+    background-color: rgba(22, 22, 33, .3);
+    border-radius: 10px;
+}
+#name h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #eee;
+}
+canvas {
+  display: block;
+  width: 800px;
+  margin: auto;
+}
+main {
+    padding: 3px;
+    width: 803px;
+    background-color: #e5e5e5;
+    margin: auto;
+}
+.container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
